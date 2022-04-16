@@ -1,0 +1,1 @@
+export const timeout = (promise: Promise<any>, time: number) => Promise.race([promise, new Promise((_r, rej) => setTimeout(rej, time))]);

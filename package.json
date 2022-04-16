@@ -1,0 +1,22 @@
+{
+  "name": "tidal-linux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "package": "rm -rf Tidal-linux-x64/; npm run build; npm --prefix ./dist install ./dist --omit=dev; ts-node --skip-project package.ts",
+    "build": "rm -rf ./dist/; tsc; mkdir ./dist/assets/; cp ./assets/* ./dist/assets/; cp ./package.json ./dist/",
+    "start": "npm run build; electron ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "github:castlabs/electron-releases#v18.0.3+wvcus",
+    "electron-packager": "^15.4.0"
+  },
+  "dependencies": {
+    "@types/discord-rpc": "^4.0.2",
+    "discord-rpc": "^4.0.1",
+    "electron-settings": "^4.0.2"
+  }
+}
