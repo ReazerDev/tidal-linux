@@ -27,6 +27,10 @@ export class App {
         DiscordIntegration.init(this.tidal);
       }, 5000);
     });
+
+    app.on('second-instance', () => {
+      this.mainWindow.show();
+    });
   }
 
   private createWindow() {
