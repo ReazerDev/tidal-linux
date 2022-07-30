@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "github:castlabs/electron-releases#v18.0.3+wvcus",
-    "electron-packager": "^15.4.0"
+    "electron": "github:castlabs/electron-releases#v19.0.10+wvcus",
+    "electron-packager": "^15.5.1"
   },
   "dependencies": {
-    "@types/discord-rpc": "^4.0.2",
+    "@types/discord-rpc": "^4.0.3",
     "discord-rpc": "^4.0.1",
     "electron-settings": "^4.0.2"
   }
