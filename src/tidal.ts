@@ -64,7 +64,7 @@ export class Tidal {
   }
 
   public async getCurrentDuration(): Promise<string> {
-    return await this.executeJS(`document.querySelector('[data-test="duration-time"]').textContent`);
+    return await this.executeJS(`document.querySelector('[data-test="duration"]').textContent`);
   }
 
   private executeJS(command: string): Promise<any> {
